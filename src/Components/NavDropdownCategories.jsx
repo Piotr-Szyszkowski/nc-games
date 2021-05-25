@@ -12,32 +12,37 @@ const NavDropdownCategories = () => {
     });
   }, []);
 
-  console.log(categoriesList);
-
   const navSubmitHandle = (x) => {
     history.push(`/${x}`);
   };
 
   return (
-    <form input="submit">
-      <label htmlFor="categories" className="Nav__Button">
+    <form input="submit" className="Nav__Button--Categories">
+      <label
+        htmlFor="categories"
+        className="Nav__Button Nav__Button--Categories"
+      >
         CATEGORIES
       </label>
       <br />
       <select
+        className="Nav__SelectCategory"
         name="categories"
         id="categories"
         onChange={(event) => {
-          console.log(event.target.value);
-          console.log(event);
           navSubmitHandle(event.target.value);
         }}
       >
-        <option value="volvo">Volvo</option>
-
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
+        <option key="all" value="all">
+          All...
+        </option>
+        {categoriesList.map((categoryObj) => {
+          return (
+            <option key={`${categoryObj.slug}`} value={`${categoryObj.slug}`}>
+              {categoryObj.slug}
+            </option>
+          );
+        })}
       </select>
     </form>
   );

@@ -5,10 +5,9 @@ import NavDropdownCategories from "./NavDropdownCategories";
 const Nav = () => {
   return (
     <section className="Nav">
-      <Link to="/" className="Nav__Button">
+      <Link to="/" className="Nav__Button Nav__Button--Home">
         <h1>NC-Games</h1>
       </Link>
-
       <NavDropdownCategories />
     </section>
   );

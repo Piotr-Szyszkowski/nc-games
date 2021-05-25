@@ -1,9 +1,17 @@
+h1 {
+  font-size: 49px;
+  font-family: "Odibee Sans", cursive;
+  margin: auto auto auto auto;
+  padding: 10px 10px 10px 10px;
+}
+
 .App {
-  text-align: center;
 }
 
 .Nav {
+  text-align: center;
   background-color: #a41d1d;
+  border-radius: 9px;
 }
 
 .Nav__Button {
@@ -12,4 +20,41 @@
 }
 
 .Nav__Button--Home {
+}
+
+.Nav__Button--Categories {
+  font-family: "Squada One", cursive;
+  font-size: 29px;
+  padding-bottom: 9px;
+}
+
+.Nav__SelectCategory {
+  margin-top: 6px;
+  margin-bottom: 11px;
+  font-size: 17px;
+  padding: 2px;
+  font-family: "Inconsolata", monospace;
+}
+
+@media only screen and (min-width: 769px) {
+  .Nav {
+    display: grid;
+
+    grid-template-columns: 25% 47%;
+    grid-template-rows: min-content auto;
+    grid-template-areas:
+      "categories"
+      "home";
+  }
+
+  .Nav__Button--Categories {
+    grid-area: categories;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 0%;
+  }
+
+  .Nav__Button--Home {
+    padding-top: 2%;
+  }
 }
