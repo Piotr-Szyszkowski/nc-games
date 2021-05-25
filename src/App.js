@@ -13,10 +13,10 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/reviews/">
+        <Route exact path="/reviews/categories/:category">
           <Reviews />
         </Route>
-        <Route exact path="/reviews/:review_id">
+        <Route exact path="/review/:review_id">
           <SingleReview />
         </Route>
       </Switch>

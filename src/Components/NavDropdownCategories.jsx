@@ -12,8 +12,8 @@ const NavDropdownCategories = () => {
     });
   }, []);
 
-  const navSubmitHandle = (x) => {
-    history.push(`/${x}`);
+  const navSubmitHandle = (category) => {
+    history.push(`/reviews/categories/${category}`);
   };
 
   return (
@@ -30,7 +30,8 @@ const NavDropdownCategories = () => {
         name="categories"
         id="categories"
         onChange={(event) => {
-          navSubmitHandle(event.target.value);
+          const chosenCategory = event.target.value;
+          navSubmitHandle(chosenCategory);
         }}
       >
         <option key="all" value="all">
