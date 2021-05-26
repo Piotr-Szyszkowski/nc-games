@@ -20,3 +20,12 @@ export const getReviews = async (category) => {
     return data.reviews;
   }
 };
+
+export const getSingleReview = async (reviewId) => {
+  const { data } = await ncGamesApi.get(`/reviews/${reviewId}`);
+  return data.review;
+};
+
+export const setVotesInApi = (reviewId) => {
+  return ncGamesApi.patch(`/reviews/${reviewId}`, { inc_votes: 1 });
+};

@@ -45,6 +45,13 @@ h1 {
   padding: 1px 1px 1px 1px;
   margin: 2px 0px 2px 0px;
 }
+
+.ReviewCard_Link {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+}
+
 .ReviewCard__p {
   margin-top: 3%;
   margin-left: 3%;
@@ -57,6 +64,33 @@ h1 {
 .Reviews__Header {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
+}
+
+.SingleReviewContainer__MainPic {
+  width: 100%;
+  border-radius: 5%;
+  margin-top: 1%;
+}
+
+.SingleReview__Body {
+  background-color: #1511c0;
+  color: white;
+  border-radius: 10px;
+  padding: 1px 1px 1px 1px;
+  margin: 2px 0px 2px 0px;
+}
+
+.SingleReview__Body__p {
+}
+
+.SingleReview_Tag {
+  font-family: "Heebo", sans-serif;
+  font-size: 1.25em;
+  background-color: #1511c0;
+  color: white;
+  border-radius: 10px;
+  padding: 1px 1px 1px 1px;
+  margin: 2px 0px 2px 0px;
 }
 
 @media only screen and (min-width: 769px) {
