@@ -16,9 +16,20 @@ const Reviews = () => {
   console.log(reviewsList);
 
   return (
-    <div>
-      <h2>Reviews go here on {category} games</h2>
-      <ReviewCard />
+    <div className="Reviews__MainReviewsContainer">
+      <header className="Reviews__Header">
+        <h2>Reviews of {category} games:</h2>
+      </header>
+      {reviewsList.map(({ title, owner, review_id }) => {
+        return (
+          <ReviewCard
+            key={review_id}
+            title={title}
+            author={owner}
+            id={review_id}
+          />
+        );
+      })}
     </div>
   );
 };

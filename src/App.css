@@ -36,6 +36,29 @@ h1 {
   font-family: "Inconsolata", monospace;
 }
 
+.ReviewCard {
+  font-family: "Heebo", sans-serif;
+  font-size: 1.25em;
+  background-color: #1511c0;
+  color: white;
+  border-radius: 10px;
+  padding: 1px 1px 1px 1px;
+  margin: 2px 0px 2px 0px;
+}
+.ReviewCard__p {
+  margin-top: 3%;
+  margin-left: 3%;
+}
+
+.Reviews__MainReviewsContainer {
+  background-color: #8e94de;
+}
+
+.Reviews__Header {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
 @media only screen and (min-width: 769px) {
   .Nav {
     display: grid;

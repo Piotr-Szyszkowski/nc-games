@@ -34,6 +34,9 @@ const NavDropdownCategories = () => {
           navSubmitHandle(chosenCategory);
         }}
       >
+        <option key="..." value="all">
+          ...
+        </option>
         <option key="all" value="all">
           All...
         </option>
