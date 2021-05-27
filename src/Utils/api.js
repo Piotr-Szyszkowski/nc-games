@@ -35,3 +35,15 @@ export const getCommentsForId = (reviewId) => {
     return response.data.comments;
   });
 };
+
+export const postComment = (commentDetails) => {
+  const commentObj = {
+    username: commentDetails.username,
+    comment_body: commentDetails.commentTxt,
+  };
+  return ncGamesApi
+    .post(`/reviews/${commentDetails.review_id}/comments`, commentObj)
+    .then((response) => {
+      return response.data.comment;
+    });
+};

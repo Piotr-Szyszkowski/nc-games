@@ -3,18 +3,19 @@ import { useParams } from "react-router";
 import { getCommentsForId } from "../Utils/api";
 import SingleComment from "./SingleComment";
 
-const CommentsContent = () => {
+const CommentsContent = ({ comments, setComments }) => {
   const { review_id } = useParams();
-  const [comments, setComments] = useState([]);
+
   useEffect(() => {
     getCommentsForId(review_id).then((commentsFromApi) => {
       setComments(commentsFromApi);
     });
   }, []);
+
   return (
-    <div className="Comments__Content">
+    <div className="Comments__Content" key="Comments__Content">
       {comments.map((comment) => {
-        return <SingleComment commentObj={comment} />;
+        return <SingleComment commentObj={comment} key={comment.comment_id} />;
       })}
     </div>
   );

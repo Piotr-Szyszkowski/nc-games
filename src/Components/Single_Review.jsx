@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router";
 import { getSingleReview } from "../Utils/api";
+import CommentAdder from "./CommentAdder";
 import Comments from "./Comments";
 import CommentsContent from "./Comments_Content";
 import Votes from "./Votes";
@@ -8,6 +9,7 @@ import Votes from "./Votes";
 const SingleReview = () => {
   const { review_id } = useParams();
   const [displayedReview, setDisplayedReview] = useState({});
+  const [comments, setComments] = useState([]);
   useState(() => {
     getSingleReview(review_id).then((singleReviewFromApi) => {
       setDisplayedReview(singleReviewFromApi);
@@ -39,9 +41,10 @@ const SingleReview = () => {
         <p className="SingleReview__Body__p">{displayedReview.review_body}</p>
       </div>
       <Votes review_id={review_id} votes={displayedReview.votes} />
-      <Comments>
-        <CommentsContent />
+      <Comments comments={comments}>
+        <CommentsContent comments={comments} setComments={setComments} />
       </Comments>
+      <CommentAdder comments={comments} setComments={setComments} />
     </div>
   );
 };

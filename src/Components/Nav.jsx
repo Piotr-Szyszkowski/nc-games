@@ -15,9 +15,13 @@ const Nav = () => {
       <div className="Nav__User">
         <h3 className="Nav__User__Username">
           User:
-          <br /> {user.name}
+          <br /> {user.username}
         </h3>
-        <img className="Nav__User__Avatar" src={user.avatar_url} />
+        <img
+          className="Nav__User__Avatar"
+          src={user.avatar_url}
+          alt="user's avatar"
+        />
       </div>
     </section>
   );

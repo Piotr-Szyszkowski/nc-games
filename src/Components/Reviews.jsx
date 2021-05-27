@@ -13,8 +13,6 @@ const Reviews = () => {
     });
   }, [category]);
 
-  console.log(reviewsList);
-
   return (
     <div className="Reviews__MainReviewsContainer">
       <header className="Reviews__Header">
