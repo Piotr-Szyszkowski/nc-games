@@ -28,6 +28,27 @@ h1 {
   padding-bottom: 9px;
 }
 
+.Nav__User {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: min-content;
+  gap: 0px 0px;
+  grid-template-areas: "Avatar Username";
+}
+
+.Nav__User__Username {
+  grid-area: Username;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Nav__User__Avatar {
+  margin-left: 16%;
+  grid-area: Avatar;
+  height: 75px;
+  border-radius: 50%;
+}
+
 .Nav__SelectCategory {
   margin-top: 6px;
   margin-bottom: 11px;
@@ -64,6 +85,21 @@ h1 {
 .Reviews__Header {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
+}
+
+.SingleComment {
+  background-color: #bebdf1;
+  border-radius: 12px;
+}
+
+.SingleComment__Author {
+  margin-top: 3%;
+  margin-left: 3%;
+}
+
+.SingleComment__Text {
+  margin-top: 3%;
+  margin-left: 3%;
 }
 
 .SingleReviewContainer__MainPic {
