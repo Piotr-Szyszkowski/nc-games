@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useParams } from "react-router";
 import { getSingleReview } from "../Utils/api";
+import Comments from "./Comments";
+import CommentsContent from "./Comments_Content";
 import Votes from "./Votes";
 
 const SingleReview = () => {
@@ -37,6 +39,9 @@ const SingleReview = () => {
         <p className="SingleReview__Body__p">{displayedReview.review_body}</p>
       </div>
       <Votes review_id={review_id} votes={displayedReview.votes} />
+      <Comments>
+        <CommentsContent />
+      </Comments>
     </div>
   );
 };

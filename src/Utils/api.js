@@ -29,3 +29,9 @@ export const getSingleReview = async (reviewId) => {
 export const setVotesInApi = (reviewId) => {
   return ncGamesApi.patch(`/reviews/${reviewId}`, { inc_votes: 1 });
 };
+
+export const getCommentsForId = (reviewId) => {
+  return ncGamesApi.get(`/reviews/${reviewId}/comments`).then((response) => {
+    return response.data.comments;
+  });
+};

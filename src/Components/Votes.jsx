@@ -12,10 +12,14 @@ const Votes = ({ review_id, votes }) => {
 
   return (
     <div className="Votes">
-      <button onClick={incVotes} disabled={haveVoted}>
+      <button
+        onClick={incVotes}
+        disabled={haveVoted}
+        className="Votes__VoteButton"
+      >
         Vote
       </button>
-      <p>Votes: {votes + votesChange}</p>
+      <p className="Votes__VoteCount">Votes: {votes + votesChange}</p>
     </div>
   );
 };

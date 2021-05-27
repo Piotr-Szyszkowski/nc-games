@@ -93,6 +93,22 @@ h1 {
   margin: 2px 0px 2px 0px;
 }
 
+.Votes {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: min-content;
+  grid-template-areas: "VoteButton VoteCount";
+}
+
+.Votes__VoteButton {
+  grid-area: VoteButton;
+}
+
+.Votes__VoteCount {
+  grid-area: VoteCount;
+  margin-left: 9%;
+}
+
 @media only screen and (min-width: 769px) {
   .Nav {
     display: grid;
