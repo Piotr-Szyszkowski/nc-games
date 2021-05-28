@@ -9,8 +9,10 @@ h1 {
 }
 
 .Error404 {
+  text-align: center;
 }
 .Error404__h2Message {
+  font-family: "Permanent Marker", cursive;
 }
 .Error404__Img {
 }
@@ -18,7 +20,7 @@ h1 {
 .Home {
   text-align: center;
   background-color: #6cb4f8;
-  border-radius: 4%;
+  border-radius: 10px;
   padding: 1%;
   margin-top: 1%;
 }
@@ -68,6 +70,7 @@ h1 {
   grid-area: Avatar;
   height: 75px;
   border-radius: 50%;
+  max-width: 200px;
 }
 
 .Nav__SelectCategory {
@@ -107,13 +110,36 @@ h1 {
   margin-left: 3%;
 }
 
+.ReviewSorting__SortBy__Form {
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+
+.ReviewSorting__SortBy__Form__Label {
+  font-size: 1.4em;
+  padding-right: 1.5%;
+}
+
+.ReviewSorting__SortBy__Form__SelectField {
+  font-family: "Inconsolata", monospace;
+  font-size: 17px;
+  padding: 2px;
+}
+
 .Reviews__MainReviewsContainer {
-  background-color: #8e94de;
+  padding-top: 2%;
+  margin-top: 2%;
+  background-color: #acafd2;
+  border-radius: 8px;
 }
 
 .Reviews__Header {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
+}
+
+.Reviews__Header__Title {
+  margin-top: 8px;
 }
 
 .SingleComment {

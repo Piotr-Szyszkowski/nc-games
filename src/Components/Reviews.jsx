@@ -2,26 +2,37 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { getReviews } from "../Utils/api";
 import ReviewCard from "./ReviewCard";
+import Error404 from "./Error404";
 
 const Reviews = () => {
   const [reviewsList, setReviewsList] = useState([]);
   const [stateOfSortBy, setStateOfSortBy] = useState("Created at");
+  const [error, setError] = useState();
   const { category } = useParams();
 
   useEffect(() => {
-    getReviews(category, stateOfSortBy).then((reviewsFromApi) => {
-      setReviewsList(reviewsFromApi);
-    });
+    setError(null);
+    getReviews(category, stateOfSortBy)
+      .then((reviewsFromApi) => {
+        setReviewsList(reviewsFromApi);
+      })
+      .catch((err) => {
+        setError(err.response.status);
+      });
   }, [category, stateOfSortBy]);
 
   const handleSortByChange = (sortBy) => {
     setStateOfSortBy(sortBy);
   };
 
+  if (error) {
+    return <Error404 />;
+  }
+
   return (
     <div className="Reviews__MainReviewsContainer">
       <header className="Reviews__Header">
-        <h2>Reviews of {category} games:</h2>
+        <h2 className="Reviews__Header__Title">Reviews of {category} games:</h2>
       </header>
       <section className="ReviewSorting">
         <form input="submit" className="ReviewSorting__SortBy__Form">

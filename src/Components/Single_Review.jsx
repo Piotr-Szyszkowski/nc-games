@@ -13,6 +13,7 @@ const SingleReview = () => {
   const [comments, setComments] = useState([]);
   const [error, setError] = useState();
   useState(() => {
+    setError(null);
     getSingleReview(review_id)
       .then((singleReviewFromApi) => {
         setDisplayedReview(singleReviewFromApi);

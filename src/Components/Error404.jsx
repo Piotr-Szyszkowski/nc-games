@@ -2,7 +2,7 @@ import React from "react";
 
 const Error404 = () => {
   return (
-    <div class="Error404">
+    <div className="Error404">
       <h2 className="Error404__h2Message">
         Bet this is not the place you were looking for?
       </h2>

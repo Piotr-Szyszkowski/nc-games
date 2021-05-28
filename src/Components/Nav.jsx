@@ -8,7 +8,13 @@ const Nav = () => {
 
   return (
     <section className="Nav">
-      <Link to="/" className="Nav__Button Nav__Button--Home">
+      <Link
+        to="/"
+        className="Nav__Button Nav__Button--Home"
+        onClick={() => {
+          console.log("click!!");
+        }}
+      >
         <h1>NC-Games</h1>
       </Link>
       <NavDropdownCategories />
