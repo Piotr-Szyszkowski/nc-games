@@ -9,13 +9,22 @@ export const getCategories = async () => {
   return data.categories;
 };
 
-export const getReviews = async (category) => {
+export const getReviews = async (category, stateOfSortBy) => {
+  const ref = {
+    "Created at": "created_at",
+    Votes: "votes",
+    Comments: "comment_count",
+  };
+  const apiSortBy = ref[stateOfSortBy];
+
   if (category === `all`) {
-    const { data } = await ncGamesApi.get(`/reviews`);
+    const { data } = await ncGamesApi.get(`/reviews`, {
+      params: { sort_by: apiSortBy },
+    });
     return data.reviews;
   } else {
     const { data } = await ncGamesApi.get(`/reviews`, {
-      params: { category: category },
+      params: { category: category, sort_by: apiSortBy },
     });
     return data.reviews;
   }

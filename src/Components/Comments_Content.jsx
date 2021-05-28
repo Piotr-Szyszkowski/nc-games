@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router";
 import { getCommentsForId } from "../Utils/api";
 import SingleComment from "./SingleComment";
 
 const CommentsContent = ({ comments, setComments }) => {
   const { review_id } = useParams();
-  console.log("CommentsContent Render");
-  console.log(comments);
 
   useEffect(() => {
     getCommentsForId(review_id).then((commentsFromApi) => {

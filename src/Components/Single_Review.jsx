@@ -15,7 +15,6 @@ const SingleReview = () => {
       setDisplayedReview(singleReviewFromApi);
     });
   }, []);
-  console.log(displayedReview);
 
   return (
     <div className="SingleReviewContainer">

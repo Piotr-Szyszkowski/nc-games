@@ -5,16 +5,17 @@ import ReviewCard from "./ReviewCard";
 
 const Reviews = () => {
   const [reviewsList, setReviewsList] = useState([]);
+  const [stateOfSortBy, setStateOfSortBy] = useState("Created at");
   const { category } = useParams();
 
   useEffect(() => {
-    getReviews(category).then((reviewsFromApi) => {
+    getReviews(category, stateOfSortBy).then((reviewsFromApi) => {
       setReviewsList(reviewsFromApi);
     });
-  }, [category]);
+  }, [category, stateOfSortBy]);
 
   const handleSortByChange = (sortBy) => {
-    console.log(sortBy);
+    setStateOfSortBy(sortBy);
   };
 
   return (
@@ -41,7 +42,7 @@ const Reviews = () => {
           >
             <option>Created at</option>
             <option>Votes</option>
-            <option>Commentst</option>
+            <option>Comments</option>
           </select>
         </form>
       </section>
