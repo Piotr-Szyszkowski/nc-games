@@ -15,6 +15,7 @@ const SingleReview = () => {
       setDisplayedReview(singleReviewFromApi);
     });
   }, []);
+  console.log(displayedReview);
 
   return (
     <div className="SingleReviewContainer">
@@ -41,7 +42,7 @@ const SingleReview = () => {
         <p className="SingleReview__Body__p">{displayedReview.review_body}</p>
       </div>
       <Votes review_id={review_id} votes={displayedReview.votes} />
-      <Comments comments={comments}>
+      <Comments>
         <CommentsContent comments={comments} setComments={setComments} />
       </Comments>
       <CommentAdder comments={comments} setComments={setComments} />
