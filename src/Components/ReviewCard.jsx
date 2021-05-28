@@ -1,12 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ReviewCard = ({ title, author, id }) => {
+const ReviewCard = ({
+  title,
+  author,
+  id,
+  created_at,
+  comment_count,
+  votes,
+}) => {
   return (
     <div key={id} className="ReviewCard">
       <Link className="ReviewCard_Link" to={`/review/${id}`}>
         <p className="ReviewCard__p">Title: {title}</p>
         <p className="ReviewCard__p">Author: {author}</p>
+        <p className="ReviewCard__FootNote">Comments: {comment_count}</p>
+        <p className="ReviewCard__FootNote">Votes: {votes}</p>
+        <p className="ReviewCard__FootNote">Created: {created_at}</p>
       </Link>
     </div>
   );

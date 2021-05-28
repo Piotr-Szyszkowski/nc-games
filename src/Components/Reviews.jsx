@@ -18,16 +18,21 @@ const Reviews = () => {
       <header className="Reviews__Header">
         <h2>Reviews of {category} games:</h2>
       </header>
-      {reviewsList.map(({ title, owner, review_id }) => {
-        return (
-          <ReviewCard
-            key={review_id}
-            title={title}
-            author={owner}
-            id={review_id}
-          />
-        );
-      })}
+      {reviewsList.map(
+        ({ title, owner, review_id, created_at, comment_count, votes }) => {
+          return (
+            <ReviewCard
+              key={review_id}
+              title={title}
+              author={owner}
+              id={review_id}
+              created_at={created_at}
+              comment_count={comment_count}
+              votes={votes}
+            />
+          );
+        }
+      )}
     </div>
   );
 };
