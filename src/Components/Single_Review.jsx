@@ -4,17 +4,27 @@ import { getSingleReview } from "../Utils/api";
 import CommentAdder from "./CommentAdder";
 import Comments from "./Comments";
 import CommentsContent from "./Comments_Content";
+import Error404 from "./Error404";
 import Votes from "./Votes";
 
 const SingleReview = () => {
   const { review_id } = useParams();
   const [displayedReview, setDisplayedReview] = useState({});
   const [comments, setComments] = useState([]);
+  const [error, setError] = useState();
   useState(() => {
-    getSingleReview(review_id).then((singleReviewFromApi) => {
-      setDisplayedReview(singleReviewFromApi);
-    });
+    getSingleReview(review_id)
+      .then((singleReviewFromApi) => {
+        setDisplayedReview(singleReviewFromApi);
+      })
+      .catch((err) => {
+        setError(err.response.status);
+      });
   }, []);
+
+  if (error) {
+    return <Error404 />;
+  }
 
   return (
     <div className="SingleReviewContainer">

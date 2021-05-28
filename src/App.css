@@ -8,6 +8,27 @@ h1 {
 .App {
 }
 
+.Error404 {
+}
+.Error404__h2Message {
+}
+.Error404__Img {
+}
+
+.Home {
+  text-align: center;
+  background-color: #6cb4f8;
+  border-radius: 4%;
+  padding: 1%;
+  margin-top: 1%;
+}
+
+.Home__Quote {
+  font-family: "Sriracha", cursive;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 .Nav {
   text-align: center;
   background-color: #a41d1d;
