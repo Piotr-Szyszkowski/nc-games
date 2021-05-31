@@ -17,7 +17,7 @@ const NavDropdownCategories = () => {
   };
 
   return (
-    <form input="submit" className="Nav__Button--Categories">
+    <form id="catForm" className="Nav__Button--Categories">
       <label
         htmlFor="categories"
         className="Nav__Button Nav__Button--Categories"

@@ -6,13 +6,17 @@ import NavDropdownCategories from "./NavDropdownCategories";
 const Nav = () => {
   const { user } = useContext(UserContext);
 
+  const catResetFunc = () => {
+    document.getElementById("catForm").reset();
+  };
+
   return (
     <section className="Nav">
       <Link
         to="/"
         className="Nav__Button Nav__Button--Home"
         onClick={() => {
-          console.log("click!!");
+          catResetFunc();
         }}
       >
         <h1>NC-Games</h1>
