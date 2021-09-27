@@ -5,15 +5,10 @@ import Home from "./Components/Home";
 import Nav from "./Components/Nav";
 import Reviews from "./Components/Reviews";
 import SingleReview from "./Components/Single_Review";
-import { UserContext } from "./Contexts/UserContext";
+import { UserContext, defaultUserObject } from "./Contexts/UserContext";
 
 function App() {
-  const [user, setUser] = useState({
-    username: "grumpy19",
-    name: "Paul Grump",
-    avatar_url:
-      "https://imagez.tmz.com/image/a1/1by1/2020/09/15/a1db93415c0d49cd9bffcd2c5b812703_xl.jpg",
-  });
+  const [user, setUser] = useState(defaultUserObject);
 
   return (
     <UserContext.Provider value={{ user, setUser }}>
