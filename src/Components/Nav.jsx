@@ -11,7 +11,7 @@ const Nav = () => {
   };
 
   return (
-    <section className="Nav">
+    <section className="Nav m-1 p-1">
       <Link
         to="/"
         className="Nav__Button Nav__Button--Home"
@@ -19,7 +19,7 @@ const Nav = () => {
           catResetFunc();
         }}
       >
-        <h1>NC-Games</h1>
+        <h1 className="font-odibee-sans text-4xl">NC-Games</h1>
       </Link>
       <NavDropdownCategories />
       <div className="Nav__User">

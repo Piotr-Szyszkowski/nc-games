@@ -1,9 +1,9 @@
-h1 {
+/* h1 {
   font-size: 49px;
   font-family: "Odibee Sans", cursive;
   margin: auto auto auto auto;
   padding: 10px 10px 10px 10px;
-}
+} */
 
 .App {
 }
@@ -87,8 +87,8 @@ h1 {
   background-color: #1511c0;
   color: white;
   border-radius: 10px;
-  padding: 1px 1px 1px 1px;
-  margin: 2px 0px 2px 0px;
+  /* padding: 1px 1px 1px 1px;
+  margin: 2px 0px 2px 0px; */
 }
 
 .ReviewCard__FootNote {
