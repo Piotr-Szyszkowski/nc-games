@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         "odibee-sans": ['"Odibee Sans"', "cursive"],
+        "squada-one": ['"Squada One"', "cursive"],
+        inconsolata: ['"Inconsolata"', "monospace"],
       },
     },
   },

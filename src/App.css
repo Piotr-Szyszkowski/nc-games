@@ -19,44 +19,13 @@
   margin-right: 2%;
 }
 
-.Nav {
-  text-align: center;
-  background-color: #a41d1d;
-  border-radius: 9px;
-}
-
-.Nav__Button {
-  color: white;
-  text-decoration: none;
-}
-
-.Nav__Button--Categories {
-  font-family: "Squada One", cursive;
-  font-size: 29px;
-  padding-bottom: 9px;
-}
-
-.Nav__User__Username {
-  grid-area: Username;
-  color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.Nav__User__Avatar {
-  margin-left: 16%;
-  grid-area: Avatar;
-  height: 75px;
-  border-radius: 50%;
-  max-width: 200px;
-}
-
-.Nav__SelectCategory {
+/* .Nav__SelectCategory {
   margin-top: 6px;
   margin-bottom: 11px;
   font-size: 17px;
   padding: 2px;
   font-family: "Inconsolata", monospace;
-}
+} */
 
 .ReviewCard {
   font-family: "Heebo", sans-serif;
@@ -170,27 +139,4 @@
 .Votes__VoteCount {
   grid-area: VoteCount;
   margin-left: 9%;
-}
-
-@media only screen and (min-width: 769px) {
-  .Nav {
-    display: grid;
-
-    grid-template-columns: 25% 47%;
-    grid-template-rows: min-content auto;
-    grid-template-areas:
-      "categories"
-      "home";
-  }
-
-  .Nav__Button--Categories {
-    grid-area: categories;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding-bottom: 0%;
-  }
-
-  .Nav__Button--Home {
-    padding-top: 2%;
-  }
 }

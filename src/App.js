@@ -12,7 +12,7 @@ function App() {
 
   return (
     <UserContext.Provider value={{ user, setUser }}>
-      <div className="App">
+      <div className="App bg-gray-300 h-full">
         <Nav />
         <Switch>
           <Route exact path="/">

@@ -17,16 +17,19 @@ const NavDropdownCategories = () => {
   };
 
   return (
-    <form id="catForm" className="Nav__Button--Categories">
+    <form
+      id="catForm"
+      className="font-squada-one text-2xl md:absolute md:right-0 md:top-0 md:mt-2 md:mr-3"
+    >
       <label
         htmlFor="categories"
-        className="Nav__Button Nav__Button--Categories"
+        className="Nav__Button--Categories text-white"
       >
         CATEGORIES
       </label>
       <br />
       <select
-        className="Nav__SelectCategory"
+        className=" bg-gray-200 p-1 font-inconsolata text-base rounded-sm"
         name="categories"
         id="categories"
         onChange={(event) => {
