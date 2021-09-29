@@ -8,6 +8,9 @@ module.exports = {
         "squada-one": ['"Squada One"', "cursive"],
         inconsolata: ['"Inconsolata"', "monospace"],
       },
+      backgroundImage: {
+        "games-background-01": "url('./Images/games.png')",
+      },
     },
   },
   variants: {

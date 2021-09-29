@@ -29,7 +29,7 @@ const NavDropdownCategories = () => {
       </label>
       <br />
       <select
-        className=" bg-gray-200 p-1 font-inconsolata text-base rounded-sm"
+        className=" bg-gray-200 p-1 font-inconsolata text-base rounded-sm text-red-700 font-bold"
         name="categories"
         id="categories"
         onChange={(event) => {
@@ -40,12 +40,16 @@ const NavDropdownCategories = () => {
         <option key="..." hidden>
           choose category
         </option>
-        <option key="all" value="all">
+        <option key="all" value="all" className="font-bold">
           all...
         </option>
         {categoriesList.map((categoryObj) => {
           return (
-            <option key={`${categoryObj.slug}`} value={`${categoryObj.slug}`}>
+            <option
+              key={`${categoryObj.slug}`}
+              value={`${categoryObj.slug}`}
+              className="font-bold"
+            >
               {categoryObj.slug}
             </option>
           );

@@ -30,7 +30,7 @@ const Reviews = () => {
   }
 
   return (
-    <div className="Reviews__MainReviewsContainer p-1">
+    <div className="p-1 bg-gray-200 bg-opacity-30 rounded-md">
       <header className="Reviews__Header">
         <h2 className="Reviews__Header__Title">Reviews of {category} games:</h2>
       </header>

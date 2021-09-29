@@ -10,7 +10,10 @@ const ReviewCard = ({
   votes,
 }) => {
   return (
-    <div key={id} className="ReviewCard m-1 p-1">
+    <div
+      key={id}
+      className="ReviewCard m-1 p-1 mt-3 bg-blue-200 rounded-md bg-opacity-90"
+    >
       <Link className="ReviewCard_Link" to={`/review/${id}`}>
         <p className="ReviewCard__p">Title: {title}</p>
         <p className="ReviewCard__p">Author: {author}</p>

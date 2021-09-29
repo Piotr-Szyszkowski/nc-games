@@ -30,9 +30,9 @@
 .ReviewCard {
   font-family: "Heebo", sans-serif;
   font-size: 1.25em;
-  background-color: #1511c0;
+  /* background-color: #1511c0;
   color: white;
-  border-radius: 10px;
+  border-radius: 10px; */
 }
 
 .ReviewCard__FootNote {
@@ -68,13 +68,6 @@
   font-family: "Inconsolata", monospace;
   font-size: 17px;
   padding: 2px;
-}
-
-.Reviews__MainReviewsContainer {
-  /* padding-top: 2%; */
-  margin-top: 2%;
-  background-color: #acafd2;
-  border-radius: 8px;
 }
 
 .Reviews__Header {
