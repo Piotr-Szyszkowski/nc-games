@@ -22,7 +22,7 @@ const Nav = () => {
         <h1 className="font-odibee-sans text-4xl">NC-Games</h1>
       </Link>
       <NavDropdownCategories />
-      <div className="Nav__User">
+      <div className="flex flex-row-reverse justify-center">
         <h3 className="Nav__User__Username">
           User:
           <br /> {user.username}

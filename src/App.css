@@ -1,20 +1,8 @@
-/* h1 {
-  font-size: 49px;
-  font-family: "Odibee Sans", cursive;
-  margin: auto auto auto auto;
-  padding: 10px 10px 10px 10px;
-} */
-
-.App {
-}
-
 .Error404 {
   text-align: center;
 }
 .Error404__h2Message {
   font-family: "Permanent Marker", cursive;
-}
-.Error404__Img {
 }
 
 .Home {
@@ -42,21 +30,10 @@
   text-decoration: none;
 }
 
-.Nav__Button--Home {
-}
-
 .Nav__Button--Categories {
   font-family: "Squada One", cursive;
   font-size: 29px;
   padding-bottom: 9px;
-}
-
-.Nav__User {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  grid-template-rows: min-content;
-  gap: 0px 0px;
-  grid-template-areas: "Avatar Username";
 }
 
 .Nav__User__Username {
@@ -167,9 +144,6 @@
   border-radius: 10px;
   padding: 1px 1px 1px 1px;
   margin: 2px 0px 2px 0px;
-}
-
-.SingleReview__Body__p {
 }
 
 .SingleReview_Tag {
