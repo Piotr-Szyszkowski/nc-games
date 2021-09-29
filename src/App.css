@@ -87,8 +87,6 @@
   background-color: #1511c0;
   color: white;
   border-radius: 10px;
-  /* padding: 1px 1px 1px 1px;
-  margin: 2px 0px 2px 0px; */
 }
 
 .ReviewCard__FootNote {
@@ -127,7 +125,7 @@
 }
 
 .Reviews__MainReviewsContainer {
-  padding-top: 2%;
+  /* padding-top: 2%; */
   margin-top: 2%;
   background-color: #acafd2;
   border-radius: 8px;

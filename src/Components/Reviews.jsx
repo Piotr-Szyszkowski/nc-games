@@ -30,7 +30,7 @@ const Reviews = () => {
   }
 
   return (
-    <div className="Reviews__MainReviewsContainer">
+    <div className="Reviews__MainReviewsContainer p-1">
       <header className="Reviews__Header">
         <h2 className="Reviews__Header__Title">Reviews of {category} games:</h2>
       </header>
