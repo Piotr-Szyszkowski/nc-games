@@ -2,14 +2,14 @@ import React from "react";
 
 const Error404 = () => {
   return (
-    <div className="Error404">
-      <h2 className="Error404__h2Message">
+    <div className="bg-white bg-opacity-70 absolute h-full w-full">
+      <h2 className="text-xl text-center m-2 font-bold">
         Bet this is not the place you were looking for?
       </h2>
       <img
-        src="https://images.gr-assets.com/hostedimages/1427904979ra/14333499.gif"
-        alt="Maze runner in a maze"
-        className="Error404__Img"
+        src="https://c.tenor.com/neppmKtRoRsAAAAC/john-travolta-where-am-i.gif"
+        alt="John Travolta where am I lost confused"
+        className="w-full"
       />
     </div>
   );

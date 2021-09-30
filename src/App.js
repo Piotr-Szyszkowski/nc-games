@@ -5,6 +5,7 @@ import Home from "./Components/Home";
 import Nav from "./Components/Nav";
 import Reviews from "./Components/Reviews";
 import SingleReview from "./Components/Single_Review";
+import Error404 from "./Components/Error404";
 import { UserContext, defaultUserObject } from "./Contexts/UserContext";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/review/:review_id">
             <SingleReview />
           </Route>
+          <Route component={Error404} />
         </Switch>
       </div>
     </UserContext.Provider>
