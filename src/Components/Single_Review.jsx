@@ -28,7 +28,7 @@ const SingleReview = () => {
   }
 
   return (
-    <div className="SingleReviewContainer">
+    <div className="bg-gray-300">
       <div className="SingleReviewContainer__PicContainer">
         <img
           className="SingleReviewContainer__MainPic"

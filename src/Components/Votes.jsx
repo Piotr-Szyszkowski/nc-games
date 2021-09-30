@@ -11,11 +11,11 @@ const Votes = ({ review_id, votes }) => {
   const haveVoted = votesChange > 0;
 
   return (
-    <div className="Votes">
+    <div className="Votes bg-gray-300">
       <button
         onClick={incVotes}
         disabled={haveVoted}
-        className="Votes__VoteButton"
+        className="Votes__VoteButton bg-white"
       >
         Vote
       </button>
