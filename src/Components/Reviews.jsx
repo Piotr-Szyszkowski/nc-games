@@ -31,8 +31,10 @@ const Reviews = () => {
 
   return (
     <div className="p-1 bg-gray-200 bg-opacity-30 rounded-md">
-      <header className="Reviews__Header">
-        <h2 className="Reviews__Header__Title">Reviews of {category} games:</h2>
+      <header className="text-center bg-gray-100 max-w-max mx-auto px-1 rounded-md bg-opacity-70 Class border-solid border-2 border-red-900">
+        <h2 className="font-courier-new font-bold text-xl  ">
+          Reviews of {category} games:
+        </h2>
       </header>
       <section className="ReviewSorting">
         <form input="submit" className="ReviewSorting__SortBy__Form">

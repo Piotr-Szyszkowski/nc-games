@@ -8,6 +8,7 @@ module.exports = {
         "squada-one": ['"Squada One"', "cursive"],
         inconsolata: ['"Inconsolata"', "monospace"],
         sriracha: ['"Sriracha"', "cursive"],
+        "courier-new": ['"Courier New"', "monospace"],
       },
       backgroundImage: {
         "games-background-01": "url('./Images/games.png')",

@@ -38,15 +38,6 @@
   padding: 2px;
 }
 
-.Reviews__Header {
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
-}
-
-.Reviews__Header__Title {
-  margin-top: 8px;
-}
-
 .SingleComment {
   background-color: #bebdf1;
   border-radius: 12px;
