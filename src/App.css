@@ -22,22 +22,6 @@
   margin-left: 3%;
 }
 
-.ReviewSorting__SortBy__Form {
-  margin-bottom: 2%;
-  margin-left: 2%;
-}
-
-.ReviewSorting__SortBy__Form__Label {
-  font-size: 1.4em;
-  padding-right: 1.5%;
-}
-
-.ReviewSorting__SortBy__Form__SelectField {
-  font-family: "Inconsolata", monospace;
-  font-size: 17px;
-  padding: 2px;
-}
-
 .SingleComment {
   background-color: #bebdf1;
   border-radius: 12px;

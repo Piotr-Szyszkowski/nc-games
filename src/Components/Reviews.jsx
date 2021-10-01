@@ -31,31 +31,28 @@ const Reviews = () => {
 
   return (
     <div className="p-1 bg-gray-200 bg-opacity-30 rounded-md">
-      <header className="text-center bg-gray-100 max-w-max mx-auto px-1 rounded-md bg-opacity-70 Class border-solid border-2 border-red-900">
+      <header className="text-center bg-gray-100 max-w-max mx-auto px-1 rounded-md bg-opacity-70 Class border-solid border-2 border-red-900 mb-2">
         <h2 className="font-courier-new font-bold text-xl  ">
           Reviews of {category} games:
         </h2>
       </header>
       <section className="ReviewSorting">
-        <form input="submit" className="ReviewSorting__SortBy__Form">
-          <label
-            htmlFor="sortCategory"
-            className="ReviewSorting__SortBy__Form__Label"
-          >
-            Sort by:
+        <form input="submit" className="ml-2">
+          <label htmlFor="sortCategory" className="font-bold pr-2 ">
+            Sorted by:
           </label>
           <select
             id="sortCategory"
             name="sortCategory"
-            className="ReviewSorting__SortBy__Form__SelectField"
+            className="font-inconsolata p-1 bg-gray-200 rounded-md  "
             onChange={(event) => {
               const chosenSortBy = event.target.value;
               handleSortByChange(chosenSortBy);
             }}
           >
-            <option>Created at</option>
-            <option>Votes</option>
-            <option>Comments</option>
+            <option className="font-inconsolata">Created at</option>
+            <option className="font-inconsolata">Votes</option>
+            <option className="font-inconsolata">Comments</option>
           </select>
         </form>
       </section>
