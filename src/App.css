@@ -1,27 +1,3 @@
-.ReviewCard {
-  font-family: "Heebo", sans-serif;
-  font-size: 1.25em;
-}
-
-.ReviewCard__FootNote {
-  margin-bottom: 0%;
-  margin-top: 0%;
-  font-size: 0.6em;
-  font-family: "Andale Mono", monospace;
-  margin-left: 1%;
-}
-
-.ReviewCard_Link {
-  text-decoration: none;
-  font-family: inherit;
-  color: inherit;
-}
-
-.ReviewCard__p {
-  margin-top: 3%;
-  margin-left: 3%;
-}
-
 .SingleComment {
   background-color: #bebdf1;
   border-radius: 12px;

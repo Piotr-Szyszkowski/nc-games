@@ -9,6 +9,8 @@ module.exports = {
         inconsolata: ['"Inconsolata"', "monospace"],
         sriracha: ['"Sriracha"', "cursive"],
         "courier-new": ['"Courier New"', "monospace"],
+        heebo: ['"Heebo"', "sans-serif"],
+        "andale-mono": ['"Andale Mono"', "monospace"],
       },
       backgroundImage: {
         "games-background-01": "url('./Images/games.png')",
