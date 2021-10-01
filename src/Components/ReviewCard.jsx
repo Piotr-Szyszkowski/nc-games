@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { dateConverter } from "../Utils/dateConverter";
 
 const ReviewCard = ({
   title,
@@ -19,7 +20,9 @@ const ReviewCard = ({
         <p className="ReviewCard__p">Author: {author}</p>
         <p className="ReviewCard__FootNote">Comments: {comment_count}</p>
         <p className="ReviewCard__FootNote">Votes: {votes}</p>
-        <p className="ReviewCard__FootNote">Created: {created_at}</p>
+        <p className="ReviewCard__FootNote">
+          Created: {dateConverter(created_at)}
+        </p>
       </Link>
     </div>
   );
