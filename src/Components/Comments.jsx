@@ -7,12 +7,12 @@ const Comments = ({ children }) => {
   };
 
   return (
-    <div>
+    <div className="bg-black bg-opacity-50 rounded-lg">
       <button
-        className=" bg-gray-200 p-1 px-2 rounded-lg mt-1 ml-1"
+        className=" bg-gray-700 p-1 px-2 rounded-lg mt-1 ml-1 text-gray-200 hover:text-red-800 hover:bg-gray-400 ho"
         onClick={toggleCommentsOn}
       >
-        Comments
+        Show Comments
       </button>
       {commentsOn && children}
     </div>
