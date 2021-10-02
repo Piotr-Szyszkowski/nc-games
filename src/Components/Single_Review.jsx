@@ -28,28 +28,22 @@ const SingleReview = () => {
   }
 
   return (
-    <div className="bg-gray-300">
-      <div className="SingleReviewContainer__PicContainer">
+    <div className=" rounded-xl mx-1">
+      <div className="">
         <img
-          className="SingleReviewContainer__MainPic"
+          className="rounded-xl"
           src={displayedReview.review_img_url}
           alt="board game"
         />
       </div>
-      <div className="SingleReview_Tag">
-        <p className="SingleReview_Tag__p">{displayedReview.title}</p>
-        <p className="SingleReview_Tag__p">
-          Game designed by: {displayedReview.designer}
-        </p>
-        <p className="SingleReview_Tag__p">
-          Review by: {displayedReview.owner}
-        </p>
-        <p className="SingleReview_Tag__p">
-          Game category: {displayedReview.category}
-        </p>
+      <div className=" bg-gray-300 rounded-xl my-1 p-1">
+        <p className="text-xl">{displayedReview.title}</p>
+        <p className="">Game designed by: {displayedReview.designer}</p>
+        <p className="">Review by: {displayedReview.owner}</p>
+        <p className="">Game category: {displayedReview.category}</p>
       </div>
-      <div className="SingleReview__Body">
-        <p className="SingleReview__Body__p">{displayedReview.review_body}</p>
+      <div className="bg-gray-300 rounded-xl my-1 p-1">
+        <p className="">{displayedReview.review_body}</p>
       </div>
       <Votes review_id={review_id} votes={displayedReview.votes} />
       <Comments>

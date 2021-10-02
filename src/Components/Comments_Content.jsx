@@ -13,7 +13,7 @@ const CommentsContent = ({ comments, setComments }) => {
   }, []);
 
   return (
-    <div className="Comments__Content" key="Comments__Content">
+    <div className=" p-1 rounded-lg mt-1" key="Comments__Content">
       {comments ? (
         comments.map((comment) => {
           return (
@@ -21,7 +21,7 @@ const CommentsContent = ({ comments, setComments }) => {
           );
         })
       ) : (
-        <p className="Comments__Content__NoComment">
+        <p className=" p-1 rounded-lg mt-1">
           No comments yet. Feel free to be the first!
         </p>
       )}

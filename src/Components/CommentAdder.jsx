@@ -16,10 +16,17 @@ const CommentAdder = ({ setComments, comments }) => {
     });
   };
   return (
-    <div className="CommentAdder">
+    <div className="bg-gray-300  p-1 rounded-lg mt-1 mb-4">
       <form onSubmit={handleCommentSubmit}>
-        <label htmlFor="commentTxt">Comment:</label>
-        <input
+        <label htmlFor="commentTxt" className="mt-0">
+          Comment:
+        </label>
+
+        <textarea
+          contentEditable
+          className="w-full"
+          rows="2"
+          cols="70"
           type="text"
           id="commentTxt"
           value={commentTxt}
@@ -28,7 +35,10 @@ const CommentAdder = ({ setComments, comments }) => {
           }}
           required
         />
-        <button>Add Comment</button>
+
+        <button className="ml-2 bg-gray-900 text-gray-200 p-1 px-2 rounded-lg">
+          Add Comment
+        </button>
       </form>
     </div>
   );
