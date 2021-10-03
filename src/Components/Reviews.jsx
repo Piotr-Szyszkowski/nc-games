@@ -30,7 +30,7 @@ const Reviews = () => {
   }
 
   return (
-    <div className="p-1 bg-gray-200 bg-opacity-30 rounded-md">
+    <div className="p-1 bg-gray-200 bg-opacity-30 rounded-md md:max-w-5xl md:justify-center md:mx-auto">
       <header className="text-center bg-gray-100 max-w-max mx-auto px-1 rounded-md bg-opacity-70 Class border-solid border-2 border-red-900 mb-2">
         <h2 className="font-courier-new font-bold text-xl  ">
           Reviews of {category} games:
