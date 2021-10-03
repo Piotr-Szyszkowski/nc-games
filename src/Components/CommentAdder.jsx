@@ -24,7 +24,7 @@ const CommentAdder = ({ setComments, comments }) => {
 
         <textarea
           contentEditable
-          className="w-full"
+          className="w-full rounded-lg"
           rows="2"
           cols="70"
           type="text"

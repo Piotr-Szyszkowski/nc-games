@@ -16,7 +16,7 @@ const ReviewCard = ({
       className="font-heebo m-1 p-1 mt-3 bg-gray-300 rounded-md bg-opacity-90 py-2"
     >
       <Link className="" to={`/review/${id}`}>
-        <p className="text-xl text-center font-bold text-red-900">"{title}"</p>
+        <p className="text-xl text-center font-bold text-red-900 ">"{title}"</p>
         <p className="ml-4">By: @{author}</p>
         <div className="font-andale-mono text-xs flex mx-2">
           <p className="mx-2">Comments: {comment_count}</p>

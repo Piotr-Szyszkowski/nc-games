@@ -13,7 +13,7 @@ const CommentsContent = ({ comments, setComments }) => {
   }, []);
 
   return (
-    <div className=" p-1 rounded-lg mt-1" key="Comments__Content">
+    <div className=" p-2 rounded-lg mt-1" key="Comments__Content">
       {comments ? (
         comments.map((comment) => {
           return (
