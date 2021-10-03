@@ -44,4 +44,5 @@ const CommentAdder = ({ setComments, comments }) => {
   );
 };
 
+//g
 export default CommentAdder;
