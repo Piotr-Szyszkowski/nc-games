@@ -11,7 +11,7 @@ const Votes = ({ review_id, votes }) => {
   const haveVoted = votesChange > 0;
 
   return (
-    <div className=" bg-gray-300 my-1 px-2 py-1 rounded-lg flex max-w-max">
+    <div className=" bg-gray-300 my-1 px-2 py-1 rounded-lg flex max-w-max md:ml-1/4 md:mx-auto">
       <button
         onClick={incVotes}
         disabled={haveVoted}

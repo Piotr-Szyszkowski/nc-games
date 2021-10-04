@@ -16,7 +16,7 @@ const CommentAdder = ({ setComments, comments }) => {
     });
   };
   return (
-    <div className="bg-gray-300  p-1 rounded-lg mt-1 mb-4">
+    <div className="bg-gray-300  p-1 rounded-lg mt-1 mb-4 md:max-w-xl md:mx-auto">
       <form onSubmit={handleCommentSubmit}>
         <label htmlFor="commentTxt" className="mt-0">
           Comment:
@@ -36,7 +36,7 @@ const CommentAdder = ({ setComments, comments }) => {
           required
         />
 
-        <button className="ml-2 bg-gray-900 text-gray-200 p-1 px-2 rounded-lg">
+        <button className="ml-2 bg-gray-900 text-gray-200 p-1 px-2 rounded-lg hover:text-red-800 hover:bg-gray-400">
           Add Comment
         </button>
       </form>

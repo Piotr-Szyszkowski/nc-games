@@ -7,9 +7,9 @@ const Comments = ({ children }) => {
   };
 
   return (
-    <div className=" rounded-lg">
+    <div className=" rounded-lg md:mx-auto md:max-w-4xl">
       <button
-        className=" bg-gray-700 p-1 px-2 rounded-lg mt-1 ml-1 text-gray-200 hover:text-red-800 hover:bg-gray-400 ho"
+        className=" bg-gray-700 p-1 px-2 rounded-lg mt-1 m-1 text-gray-200 hover:text-red-800 hover:bg-gray-400 "
         onClick={toggleCommentsOn}
       >
         Show Comments

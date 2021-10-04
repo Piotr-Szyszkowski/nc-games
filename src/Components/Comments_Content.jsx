@@ -13,7 +13,10 @@ const CommentsContent = ({ comments, setComments }) => {
   }, []);
 
   return (
-    <div className=" p-2 rounded-lg mt-1" key="Comments__Content">
+    <div
+      className=" p-2 rounded-lg mt-1 md:p-0 md:mx-auto md:max-w-4xl"
+      key="Comments__Content"
+    >
       {comments ? (
         comments.map((comment) => {
           return (
