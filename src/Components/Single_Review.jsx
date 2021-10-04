@@ -28,7 +28,7 @@ const SingleReview = () => {
   }
 
   return (
-    <div className=" rounded-xl mx-1 ">
+    <div className=" rounded-xl mx-1 bg-gray-900 bg-opacity-80 md:max-w-max md:mx-auto py-1 px-1">
       <div className="md:flex md:flex-row-reverse  md:mx-auto md:justify-center">
         <div className="p-2 md:w-3/4 md:max-w-3xl">
           <img
